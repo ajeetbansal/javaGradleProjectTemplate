@@ -36,13 +36,6 @@ To start
 To stop
 * gradlew :webTemplate:stopDocker
 
-### Kafka
-To start the Kafka server
-* gradlew :kafka:startDocker
-
-To stop the Kafka server
-* gradlew :kafka:stopDocker
-
 ## Integration Testing
 * Integration test pertaining to sub project reside under <subProjectRoot>/src/integrationTest directory
 
@@ -51,7 +44,6 @@ $gradlew integrationTest -DbaseUrl=<baseUrl of the microservice>
 
 For example ./gradlew integrationTest -DbaseUrl=<LBR Url>
 
-To run integration tests for specific sub project under platform, say config
-$gradlew :config:integrationTest -DbaseUrl=http://localhost:9501
+To run integration tests for specific sub project under platform, say webTemplate
 $gradlew :webTemplate:integrationTest -DbaseUrl=http://localhost:9499
 
